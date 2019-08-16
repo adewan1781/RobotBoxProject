@@ -1,4 +1,5 @@
 **Settings**
+Documentation   This is the simple login test
 Library     SeleniumLibrary
 Resource    ../page-objects/LoginPage.robot
 
