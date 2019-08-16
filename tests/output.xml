@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 3.1.2 (Python 3.6.5 on win32)" generated="20190816 13:05:51.981" rpa="false">
+<suite id="s1" name="LoginLogout" source="D:\robot-workspace\RobotBoxProject\tests\LoginLogout.robot">
+<test id="s1-t1" name="Simple Box Login and Logout">
+<kw name="Open Browser" library="SeleniumLibrary">
+<doc>Opens a new browser instance to the given ``url``.</doc>
+<arguments>
+<arg>https://www.app.box.com</arg>
+<arg>firefox</arg>
+</arguments>
+<msg timestamp="20190816 13:05:52.234" level="INFO">Opening browser 'firefox' to base url 'https://www.app.box.com'.</msg>
+<status status="PASS" starttime="20190816 13:05:52.234" endtime="20190816 13:06:02.785"></status>
+</kw>
+<kw name="User should login" library="LoginPage">
+<arguments>
+<arg>qacult.demo@gmail.com</arg>
+<arg>testing123</arg>
+</arguments>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${emailField}</arg>
+<arg>${user}</arg>
+</arguments>
+<msg timestamp="20190816 13:06:02.785" level="INFO">Typing text 'qacult.demo@gmail.com' into text field 'css:input[id='login-email']'.</msg>
+<status status="PASS" starttime="20190816 13:06:02.785" endtime="20190816 13:06:02.870"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${nextBtn}</arg>
+</arguments>
+<msg timestamp="20190816 13:06:02.870" level="INFO">Clicking element 'css:#login-submit'.</msg>
+<status status="PASS" starttime="20190816 13:06:02.870" endtime="20190816 13:06:03.845"></status>
+</kw>
+<kw name="Input Text" library="SeleniumLibrary">
+<doc>Types the given ``text`` into text field identified by ``locator``.</doc>
+<arguments>
+<arg>${pwdField}</arg>
+<arg>${pwd}</arg>
+</arguments>
+<msg timestamp="20190816 13:06:03.845" level="INFO">Typing text 'testing123' into text field 'css:input[id='password-login']'.</msg>
+<status status="PASS" starttime="20190816 13:06:03.845" endtime="20190816 13:06:03.906"></status>
+</kw>
+<kw name="Click Element" library="SeleniumLibrary">
+<doc>Click element identified by ``locator``.</doc>
+<arguments>
+<arg>${loginBtn}</arg>
+</arguments>
+<msg timestamp="20190816 13:06:03.906" level="INFO">Clicking element 'css:button[id='login-submit-password']'.</msg>
+<status status="PASS" starttime="20190816 13:06:03.906" endtime="20190816 13:06:08.369"></status>
+</kw>
+<status status="PASS" starttime="20190816 13:06:02.785" endtime="20190816 13:06:08.369"></status>
+</kw>
+<status status="PASS" starttime="20190816 13:05:52.234" endtime="20190816 13:06:08.369" critical="yes"></status>
+</test>
+<status status="PASS" starttime="20190816 13:05:51.983" endtime="20190816 13:06:08.377"></status>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0">Critical Tests</stat>
+<stat pass="1" fail="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" id="s1" name="LoginLogout">LoginLogout</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
